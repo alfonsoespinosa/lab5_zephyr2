@@ -4,4 +4,38 @@
 		blue-led = &blue_led_1;
 		red-led = &red_led_1;
 	};
+
+	resources {
+		compatible = "test-gpio";
+		status = "okay";
+		out-gpios = <&arduino_header 5 (GPIO_ACTIVE_HIGH | GPIO_PUSH_PULL)>;
+		in-gpios = <&arduino_header 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+	};
 };
+
+// Arduino
+// Header               CN9       CN10      CN7
+// Pin Nr.    GPIO     Pin Nr.   Pin Nr.   Pin Nr.
+// -------   -------   -------   -------   -------
+//    0        PA3        1
+//    1        PC0        3
+//    2        PC3        5
+//    3        PC1        7
+//    4        PC4        9
+//    5        PC5       11
+//    6        PG9                 16
+//    7        PG14                14
+//    8        PF15                12
+//    9        PE13                10
+//   10        PF14                 8
+//   11        PE11                 6
+//   12        PE9                  4
+//   13        PF13                 2
+//   14        PF12                          20
+//   15        PD15                          18
+//   16        PD14                          16
+//   17        PA7                           14
+//   18        PA6                           12
+//   19        PA5                           10
+//   20        PB9                            4
+//   21        PB8                            2

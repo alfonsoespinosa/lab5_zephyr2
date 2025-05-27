@@ -1,0 +1,13 @@
+description: |
+  This binding provides resources required to build the test
+
+compatible: "test-gpio"
+
+properties:
+  out-gpios:
+    type: phandle-array
+    required: true
+
+  in-gpios:
+    type: phandle-array
+    required: true
