@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"C_Cpp.default.compileCommands": [
+			"build/compile_commands.json"
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools-extension-pack",
+			"nordic-semiconductor.nrf-kconfig",
+			"nordic-semiconductor.nrf-devicetree"
+		]
+	}
+}

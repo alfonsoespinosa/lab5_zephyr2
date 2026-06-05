@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (PC)",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "program": "${workspaceRoot}/build/zephyr/zephyr.exe",
+            "MIMode": "gdb",
+            // "miDebuggerPath": "${workspaceRoot}/../../zephyr-sdk-1.0.1/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gdb",
+            // "preLaunchTask": "West Build"
+        }
+    ]
+}
